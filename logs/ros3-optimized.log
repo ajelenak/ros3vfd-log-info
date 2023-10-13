@@ -1,0 +1,43 @@
+File space page size is 8,388,608 bytes
+page buffer size is (8388608, 0, 0)
+Page buffer stats: PageBufferStats(meta=PageStats(accesses=6635, hits=6634, misses=1, evictions=0, bypasses=0), raw=PageStats(accesses=0, hits=0, misses=0, evictions=0, bypasses=0))
+called H5FD_s3comms_s3r_open.
+called H5FD_s3comms_parse_url.
+called H5FD_s3comms_s3r_getsize.
+called H5FD_s3comms_s3r_read.
+HEAD: Bytes 0 - 18446744073709551615, Request Size: 0
+performed on entire file
+GETSIZE: OK
+FILESIZE: 2474639360
+called H5FD_s3comms_s3r_read.
+GET: Bytes 0 - 7, Request Size: 8
+len: 8
+CHECKING FOR BUFFER OVERFLOW
+sds: 0x7f8c74524890
+sds->size: 8
+called H5FD_s3comms_s3r_read.
+GET: Bytes 0 - 15, Request Size: 16
+len: 16
+CHECKING FOR BUFFER OVERFLOW
+sds: 0x7f8c74435590
+sds->size: 16
+called H5FD_s3comms_s3r_read.
+GET: Bytes 16 - 47, Request Size: 32
+len: 32
+CHECKING FOR BUFFER OVERFLOW
+sds: 0x7f8c71c2c8f0
+sds->size: 32
+called H5FD_s3comms_s3r_read.
+GET: Bytes 48 - 559, Request Size: 512
+len: 512
+CHECKING FOR BUFFER OVERFLOW
+sds: 0x7f8c71f1b1d0
+sds->size: 512
+called H5FD_s3comms_s3r_read.
+GET: Bytes 0 - 8388607, Request Size: 8388608
+len: 8388608
+CHECKING FOR BUFFER OVERFLOW
+sds: 0x7f8c71f1c820
+sds->size: 8388608
+called H5FD_s3comms_s3r_close.
+called H5FD_s3comms_free_purl.
