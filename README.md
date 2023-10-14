@@ -30,4 +30,4 @@ or
 
 The dashboard can be run as a typical Jupyter notebook, or a standalone app in a browser with this command:
 
-    `panel serve ros3vfd-log-info.ipynb --show`.
+    panel serve ros3vfd-log-info.ipynb --show
