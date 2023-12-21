@@ -1,0 +1,19 @@
+File space page size is 8,388,608 bytes
+page buffer size is (8388608, 0, 0)
+Page buffer stats: PageBufferStats(meta=PageStats(accesses=6635, hits=6634, misses=1, evictions=0, bypasses=0), raw=PageStats(accesses=0, hits=0, misses=0, evictions=0, bypasses=0))
+called H5FD_s3comms_s3r_open.
+called H5FD_s3comms_parse_url.
+called H5FD_s3comms_s3r_getsize.
+called H5FD_s3comms_s3r_read.
+HEAD: Bytes 0 - 18446744073709551615, Request Size: 0
+performed on entire file
+GETSIZE: OK
+FILESIZE: 2474639360
+called H5FD_s3comms_s3r_read.
+GET: Bytes 0 - 16777215, Request Size: 16777216
+len: 16777216
+CHECKING FOR BUFFER OVERFLOW
+sds: 0x7fb4d0b28d20
+sds->size: 16777216
+called H5FD_s3comms_s3r_close.
+called H5FD_s3comms_free_purl.
