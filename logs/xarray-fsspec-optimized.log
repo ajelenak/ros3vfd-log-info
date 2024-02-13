@@ -1,0 +1,30 @@
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 0 - 8
+BlockCache fetching block 0
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 0 - 8
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 0 - 16
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 16 - 48
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 48 - 560
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 0 - 8000000
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 728000000 - 736000000
+BlockCache fetching block 86
+BlockCache fetching block 87
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 64000000 - 72000000
+BlockCache fetching block 7
+BlockCache fetching block 8
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 72000000 - 80000000
+BlockCache fetching block 9
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 56000000 - 64000000
+BlockCache fetching block 6
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 160000000 - 168000000
+BlockCache fetching block 19
+BlockCache fetching block 20
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 152000000 - 160000000
+BlockCache fetching block 18
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 128000000 - 136000000
+BlockCache fetching block 15
+BlockCache fetching block 16
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 136000000 - 144000000
+BlockCache fetching block 17
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 144000000 - 152000000
+<File-like object S3FileSystem, its-live-data/cloud-experiments/h5cloud/atl03/average/repacked/ATL03_20200922221235_13680801_006_02.h5> read: 168000000 - 176000000
+FileSize: 736000000

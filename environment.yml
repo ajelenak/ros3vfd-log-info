@@ -1,6 +1,5 @@
 channels:
   - conda-forge
-
 dependencies:
   - bokeh=3.2.2
   - holoviews=1.17.1
