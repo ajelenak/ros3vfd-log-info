@@ -19,7 +19,32 @@ Three ROS3 log files for the same data processing task are in this repository:
 * [logs/ros3-optimized.log](logs/ros3-optimized.log)
 * [logs/libhdf5-1.14.3-ros3-optimized.log](logs/libhdf5-1.14.3-ros3-optimized.log)
 
-The _original_ log file contains S3 requests for an HDF5 file created with default (typical) settings. The _optimized_ log information shows the effects of appplying the [paged aggregation](https://docs.hdfgroup.org/hdf5/rfc/paged_aggregation.pdf) file space strategy to create a copy of the original file and then using library's [page bufffering](https://docs.hdfgroup.org/hdf5/rfc/RFC-Page_Buffering.pdf) when reading data. Note the significantly reduced number of S3 requests in the optimized log file which directly translates into much faster data access performance. The _libhdf5-1.14.3_ optimized log file shows the new feature introduced in the libhdf5 version 1.14.3 where the ROS3 driver reads and caches the first 16 mebibytes on file open. This helps to reduce S3 requests even further for certain use cases. Download these files if you want to use the dashboard without collecting ROS3 logs yourself.
+The _original_ log file contains S3 requests for an HDF5 file created with default (typical) settings. The _optimized_ log information shows the effects of appplying the [paged aggregation](https://docs.hdfgroup.org/hdf5/rfc/paged_aggregation.pdf) file space strategy to create a copy of the original file and then using library's [page bufffering](https://docs.hdfgroup.org/hdf5/rfc/RFC-Page_Buffering.pdf) when reading data. Note the significantly reduced number of S3 requests in the optimized log file which directly translates into much faster data access performance. The _libhdf5-1.14.3_ optimized log file shows the new feature introduced in the libhdf5 version 1.14.3 where the ROS3 driver reads and caches the first 16 MB on file open. This helps to reduce S3 requests even further for certain use cases. Download these files if you want to use the dashboard without collecting ROS3 logs yourself.
+
+## Experimental fsspec logs
+
+Another way to access HDF5 data in the cloud is through fsspec, a library that allows some POSIX operations on remote files.
+If enabled, we can save these logs and this tool can plot the access the same way we do with ROS3. 
+
+A log from fsspec looks like:
+
+```
+<File-like object S3FileSystem, URL> read: 0 - 8
+<File-like object S3FileSystem, URL> read: 8 - 16
+...
+```
+
+In order to make the reader compatible we need to inject the file size in the log:
+
+```
+<File-like object S3FileSystem, URL> read: 0 - 8
+<File-like object S3FileSystem, URL> read: 8 - 16
+<File-like object S3FileSystem, URL> read: 16 - 32
+...
+FileSize: 736000000
+```
+
+> Note: A caveat with fsspec logs is that they do not report cache hits vs real requests, the total requests number is likely less.
 
 ## Two Ways to Run the Dashboard
 
