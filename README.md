@@ -74,13 +74,13 @@ FileSize: 736000000
 
 ## Two Ways to Run the Dashboard
 
-Recommended way to run the dashboard is to use either [`conda`](https://docs.conda.io) or [`mamba`](https://mamba.readthedocs.io) package managers. This repository includes a [configuration file](./env.yml) to install all the required Python packages:
+Recommended way to run the dashboard is to use either [`conda`](https://docs.conda.io) or [`mamba`](https://mamba.readthedocs.io) package managers. This repository includes a [configuration file](./environment.yml) to install all the required Python packages:
 
-    conda env create --file env.yml --name VENV_NAME
+    conda env create --file environment.yml --name VENV_NAME
 
 or
 
-    mamba env create --file env.yml --name VENV_NAME
+    mamba env create --file environment.yml --name VENV_NAME
 
 The dashboard can be run as a typical Jupyter notebook, or a standalone app in a browser with this command:
 
