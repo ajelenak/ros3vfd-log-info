@@ -22,7 +22,7 @@ The latest library release is always strongly recommended, but since ROS3 loggin
 
 ### For libhdf5-2.0 or Later
 
-Setting environment variable `HDF5_ROS3_VFD_DEBUG` to any value other than `0`, `off`, or `false` will enable logging to `stderr`.
+Setting environment variable `HDF5_ROS3_VFD_DEBUG` to any value other than `0`, `off`, or `false` will enable logging to `stderr`. The library must be built with support for the ROS3 driver.
 
 ### Before libhdf5-2.0
 
@@ -83,6 +83,11 @@ FileSize: 736000000
 ```
 
 > Note: A caveat with fsspec logs is that they do not report cache hits vs real requests, the total requests number is likely less.
+
+Two sample fsspec logs are available in this repository:
+
+* [logs/xarray-fsspec-original.log](logs/xarray-fsspec-original.log)
+* [logs/xarray-fsspec-optimized.log](logs/xarray-fsspec-optimized.log)
 
 ## Two Ways to Run the Dashboard
 
