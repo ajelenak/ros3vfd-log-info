@@ -1,11 +1,11 @@
 channels:
   - conda-forge
 dependencies:
-  - numpy=1.26.4
-  - bokeh=3.4.1
-  - holoviews=1.18.3
-  - jupyterlab=4.2.0
+  - numpy=2.3.1
+  - bokeh=3.7.3
+  - holoviews=1.21.0
+  - jupyterlab=4.4.4
   - jupyter-panel-proxy
-  - notebook=7.2.0
-  - panel=1.4.2
-  - python=3.11
+  - notebook=7.4.4
+  - panel=1.7.2
+  - python=3.13

@@ -1,0 +1,30 @@
+ -- HEAD: Bucket: hdf5.sample / Key: data/cohdf5/GEDI/PAGE08MiB_GEDI02_A_2023034194553_O23479_02_T00431_02_003_02_V002.h5
+ -- request headers:
+Host: s3.us-west-2.amazonaws.com
+User-Agent: libhdf5/2.0.0 (vfd:ros3) libaws-c-s3
+ -- response status: 200
+ -- response headers:
+x-amz-id-2: 5z+hxi+tno8kiXyKWf+N4h6wdrBCE85Z011zwJyONYB5aSbU3eK/B3mApIEozxss5+Evnt9EYl4=
+x-amz-request-id: 5HDH6PJ300Q94F9C
+Date: Tue, 08 Jul 2025 02:47:10 GMT
+Last-Modified: Sun, 11 Feb 2024 18:32:48 GMT
+ETag: "9b1d7670f5bafb409cf729964abb477b-89"
+x-amz-server-side-encryption: AES256
+Accept-Ranges: bytes
+Content-Type: binary/octet-stream
+Content-Length: 1518338048
+Server: AmazonS3
+ -- final HTTP status code: 200
+ -- file size: 1518338048 bytes
+ -- GET: Bytes 0 - 16777215, Request Size: 16777216
+ -- request headers:
+Host: s3.us-west-2.amazonaws.com
+User-Agent: libhdf5/2.0.0 (vfd:ros3) libaws-c-s3
+Range: bytes=0-16777215
+ -- final HTTP status code: 206
+ -- GET: Bytes 1048576000 - 1056964607, Request Size: 8388608
+ -- request headers:
+Host: s3.us-west-2.amazonaws.com
+User-Agent: libhdf5/2.0.0 (vfd:ros3) libaws-c-s3
+Range: bytes=1048576000-1056964607
+ -- final HTTP status code: 206
